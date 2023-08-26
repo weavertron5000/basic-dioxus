@@ -54,6 +54,12 @@ And:
 ./bash_start_dioxus
 ```
 
+You should now have hot reloading available, and as you modify your *.rs files in src, you'll be able to see the changes reflect on the locally running server. In order to see any TailwindCSS styling changes, you may need to manually refresh your browser if you add new Tailwind classes that aren't already present in your tailwind.css. This is because Dioxus uses WebSockets to stream RSX changes directly to the browser, and even though it will stream changes to class attributes in RSX, it will not automatically reload the tailwind.css file. Doing a hard refresh (F5 in Chrome) will force a reload.
+
+Over time, you should have to do this less and less as you begin reusing the same Tailwind classes over and over again.
+
+Happy developing!
+
 
 # Future
 
