@@ -1,1 +1,1 @@
-dx serve --hot-reload
+nodemon --watch public --exec "dx serve --hot-reload"
